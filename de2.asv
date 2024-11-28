@@ -1,0 +1,11 @@
+clf;
+%3x(n+3) -2x(-n-5)+x(n-1)x(n)
+
+n=-2:10;
+x = [2:2:16,15:-1:12];
+
+[x111,n111]=sigold(x,n) %dao truc
+[x11,n11 ]=sigshift(x111,n111,-5)
+[x12,n12] = sigshift(x,n,-4)
+
+
